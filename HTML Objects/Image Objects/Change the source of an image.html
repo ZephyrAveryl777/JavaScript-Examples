@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <img id="myImg" src="https://www.w3schools.com/js/compman_lowres.gif" width="350" height="250">
+    <br><br>
+    <button onclick='OnButton();'>On</button>
+    <button onclick='OffButton();'>Off</button>
+
+    <script>
+        function OnButton() {
+            document.getElementById("myImg").src = "https://www.w3schools.com/js/compman.gif"
+        }
+        function OffButton() {
+            document.getElementById("myImg").src = "https://www.w3schools.com/js/compman_lowres.gif"
+        }
+    </script>
+</body>
+
+</html>
