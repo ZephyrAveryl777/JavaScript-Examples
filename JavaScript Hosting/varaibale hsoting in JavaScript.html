@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Variable Hoisting</title>
+</head>
+
+<body>
+    <script>
+        var i = 1; // Declare and initialize i
+        document.write(i + ", " + j + "<br>"); // Prints: 1, undefined
+        var j = 2; // Declare and initialize j
+
+        var x = 5; // Declare and initialize x
+        var y; // Declare y
+        document.write(x + ", " + y + "<br>"); // Prints: 5, undefined
+        y = 10; // Initialize y
+
+        var a = 3; // Declare and initialize a
+        b = 6; // Initialize b
+        document.write(a + ", " + b + "<br>"); // Prints: 3, 6
+        var b; // Declare b
+
+        var u = 4; // Declare and initialize u
+        document.write(u + ", " + v); // Prints: 4, undefined
+        var v; // Declare v
+        v = 8; // Initialize v
+    </script>
+</body>
+
+</html>
