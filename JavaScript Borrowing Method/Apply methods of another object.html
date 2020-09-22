@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Apply Methods</title>
+</head>
+
+<body>
+    <script>
+        var objA = {
+            name: "object A",
+            say: function (greet) {
+                document.write(greet + ", " + this.name);
+            }
+        }
+
+        objA.say("Hi"); // Prints: Hi, object A
+        document.write("<br>");
+
+        var objB = {
+            name: "object B"
+        }
+
+        /* The objA doesn't have say() method, but it can borrow it from objA */
+        objA.say.apply(objB, ["Hello"]); // Prints: Hello, object B
+    </script>
+</body>
+
+</html>
