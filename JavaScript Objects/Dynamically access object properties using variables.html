@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Dynamically Access Object Properties Using Variables</title>
+</head>
+
+<body>
+    <script>
+        var person = {
+            name: "Peter",
+            age: 28,
+            gender: "Male"
+        };
+
+        var key = prompt("Enter any property name to get its value");
+        alert(person[key]); // Outputs: Peter (if enter "name")
+    </script>
+</body>
+
+</html>
