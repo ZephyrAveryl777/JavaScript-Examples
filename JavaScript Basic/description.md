@@ -1,6 +1,6 @@
 # JavaScript Basics
 
-- **`Objective :`**learn how to create variables to store data in JavaScript.
+-  **Objective :** learn how to create variables to store data in JavaScript.
 
 ### Preface
 
