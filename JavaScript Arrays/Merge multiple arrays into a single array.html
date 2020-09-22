@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Merge Multiple Arrays</title>
+</head>
+
+<body>
+    <script>
+        var pets = ["Cat", "Dog", "Parrot"];
+        var wilds = ["Tiger", "Wolf", "Zebra"];
+        var bugs = ["Ant", "Bee"];
+
+        // Creating new array by combining pets, wilds and bugs arrays
+        var animals = pets.concat(wilds, bugs);
+        document.write(animals); // Prints: Cat,Dog,Parrot,Tiger,Wolf,Zebra,Ant,Bee
+    </script>
+</body>
+
+</html>

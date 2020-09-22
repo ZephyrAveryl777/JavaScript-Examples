@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Filter an Array</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 0, 3, 1, false, 5, 1, 4, 7];
+
+        var result = arr.filter(function (element) {
+            return element > 4;
+        });
+        document.write(result + "<br>"); // Prints: 5,7
+        document.write(result.length); // Prints: 2
+    </script>
+</body>
+
+</html>

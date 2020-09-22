@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Search an Array based on Certain Condition</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 0, 3, 1, false, 5, 1, 4, 7];
+
+        var result = arr.find(function (element) {
+            return element > 4;
+        });
+        document.write(result); // Prints: 5
+    </script>
+</body>
+
+</html>
