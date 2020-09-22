@@ -1,12 +1,12 @@
-# JavaScript Type Conversions
+# JavaScript Variables
 
-- **Objective :** learn about type conversions in JavaScript.
+- **Objective :** learn how to create variables to store data in JavaScript.
 
 ### Preface
-The process of converting one data type to another data typeis called type conversion. There are two types of type conversions in JavaScript.
 
- - Implicit Conversion => automatic converts
- - Explicit conversion => manually converts
+Variables are fundamental to all programming languages. Variables are used to store data, like string of text, numbers, etc. The data or value stored in the variables can be set, updated, and retrieved whenever needed. In general, variables are symbolic names for values.
+
+You can create a variable with the var keyword, whereas the assignment operator (=) is used to assign value to a variable, like this: **`var varName = value;`**
 
 ---
 
