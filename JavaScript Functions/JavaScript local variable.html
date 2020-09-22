@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Local Variable</title>
+</head>
+
+<body>
+    <script>
+        // Defining function
+        function greetWorld() {
+            var greet = "Hello World!";
+            document.write(greet);
+        }
+
+        greetWorld(); // Prints: Hello World!
+
+        document.write(greet); // Uncaught ReferenceError: greet is not defined
+    </script>
+</body>
+
+</html>

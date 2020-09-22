@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Pass Arguments to a Function</title>
+</head>
+
+<body>
+    <script>
+        //Defining function
+        function ShowFunction(firstName, lastName) {
+            document.write(firstName + " " + lastName);
+        }
+
+        //calling function
+        ShowFunction("Clark", "Kent"); //Prints: Clark Kent
+        document.write("<br>");
+        ShowFunction("Peter"); //Prints: Peter undefined
+        console.log(ShowFunction());
+    </script>
+</body>
+
+</html>

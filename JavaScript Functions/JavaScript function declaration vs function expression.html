@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function Declaration vs. Function Expression</title>
+</head>
+
+<body>
+    <script>
+        declaration(); // Prints: Hi, I'm a function declaration!
+        function declaration() {
+            document.write("Hi, I'm a function declaration!");
+        }
+
+        expression(); // Uncaught TypeError: undefined is not a function
+        var expression = function () {
+            document.write("Hi, I'm a function expression!");
+        }
+    </script>
+</body>
+
+</html>

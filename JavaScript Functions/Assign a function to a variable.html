@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assign a Function to a Variable</title>
+</head>
+
+<body>
+    <script>
+        var getSum = function (num1, num2) {
+            var total = num1 + num2;
+            return total;
+        }
+        document.write(getSum(5, 10) + "<br>"); // Prints: 15
+
+        var sum = getSum(7, 25);
+        document.write(sum); // Prints: 32
+    </script>
+</body>
+
+</html>
