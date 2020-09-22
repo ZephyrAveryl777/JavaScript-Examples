@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Method</title>
+</head>
+
+<body>
+    <h2>JavaScript Array.filter()</h2>
+    <p>creates a new array with all array elements that passes a test.</p>
+    <p id="demo"></p>
+    <script>
+        var numbers = [45, 4, 9, 16, 25];
+        var filtering = numbers.filter(myFunction);
+
+        document.getElementById("demo").innerHTML = filtering;
+        function myFunction(value, index, array) {
+            return value > 10;
+        }
+    </script>
+</body>
+
+</html>

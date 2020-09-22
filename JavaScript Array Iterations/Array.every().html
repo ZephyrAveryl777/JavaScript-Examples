@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>JavaScript Array Methods</title>
+</head>
+
+<body>
+    <h2>JavaScript Array.every()</h2>
+    <p>The every() method checks if all array values pass a test.</p>
+    <p id="demo"></p>
+    <script>
+        var numbers = [45, 4, 9, 16, 25];
+        var filtering = numbers.every(myFunction);
+
+        document.getElementById("demo").innerHTML = "Elements are in them are: " + filtering;
+
+        function myFunction(value, index, array) {
+            return value > 10;
+        }
+    </script>
+</body>
+
+</html>
