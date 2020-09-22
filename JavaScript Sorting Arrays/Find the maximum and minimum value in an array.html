@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Find the Maximum
+        and Minimum Value in an Array</title>
+</head>
+
+<body>
+    <script>
+        var numbers = [3, -7, 10, 8, 15, 2];
+
+        //Defining function to find maximum value
+        function findMax(array) {
+            return Math.max.apply(null, array);
+        }
+
+        //Defining function to find minimum value
+        function findMini(array) {
+            return Math.min.apply(null, array);
+        }
+
+        document.write(findMax(numbers) + "<br>"); //Outputs: 15
+        document.write(findMini(numbers) + "<br>");//Outputs: -7
+    </script>
+</body>
+
+</html>

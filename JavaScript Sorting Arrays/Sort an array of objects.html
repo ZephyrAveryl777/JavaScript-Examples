@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sort an Array of Objects</title>
+</head>
+
+<body>
+    <script>
+        var persons = [
+            { name: "X1", age: 14 },
+            { name: "X2", age: 30 },
+            { name: "X3", age: 44 },
+            { name: "X4", age: 21 }
+        ];
+
+        //Sort by age
+        persons.sort(function (a, b) { return a.age - b.age; });
+
+        console.log(persons);
+
+        //Sort by name
+        persons.sort(function (a, b) {
+            var x = a.name.toLowerCase();
+            var y = b.name.toLowerCase();
+            if (x < y) {
+                return -1;
+            }
+            if (x > y) {
+                return -1;
+            }
+            //names must be equal
+            return 0;
+        });
+
+        //Loop through all the elements in the array
+        for (var elements in persons) {
+            //Loop through all the properties in the array
+            for (var properties in persons[i]) {
+                document.write(properties + ":" + persons[elements][properties] + "<br>")
+            }
+            document.write("<hr>");
+        }
+    </script>
+</body>
+
+</html>
