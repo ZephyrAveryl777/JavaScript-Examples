@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function selectMultiple() {
+            document.getElementById("mySelect").multiple = true;
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <select id="mySelect" size="4">
+            <option>Apple</option>
+            <option>Pear</option>
+            <option>Banana</option>
+            <option>Orange</option>
+        </select>
+        <input type="button" onclick="selectMultiple()" value="Select multiple">
+    </form>
+
+    <p>Before you click "Select multiple", you cannot select more than one option (by holding down the Shift or Ctrl
+        key).</p>
+    <p>After you have clicked "Select multiple", you can.</p>
+
+</body>
+
+</html>
