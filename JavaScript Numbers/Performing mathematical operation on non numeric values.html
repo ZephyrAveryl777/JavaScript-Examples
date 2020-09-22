@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Performing Mathematical Operation on Non-numeric Values</title>
+</head>
+
+<body>
+    <script>
+        //Creating variables
+        var x = 10;
+        var y = "foo";
+        var z = NaN;
+
+        // Subtracting a number from a non-numeric string
+        document.write(y - x); // NaN
+        document.write("<br>");
+
+        // Multiplying a number with a non-numeric string
+        document.write(x * y); // NaN
+        document.write("<br>");
+
+        // Dividing a number with a non-numeric string
+        document.write(x / y); // NaN
+        document.write("<br>");
+
+        // Adding NaN to a number
+        document.write(x + z); // NaN
+        document.write("<br>");
+
+        // Adding NaN to a string
+        document.write(y + z); // fooNaN
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Representing Numbers in Hexadecimal Notation</title>
+</head>
+
+<body>
+    <script>
+        // Creating variables
+        var x = 10;
+        var y = 20;
+        var z = "30";
+
+        // Adding a number with a number, the result will be sum of numbers
+        document.write(x + y); // 30
+        document.write("<br>");
+
+        // Adding a string with a string, the result will be string concatenation
+        document.write(z + z); // '3030'
+        document.write("<br>");
+
+        // Adding a number with a string, the result will be string concatenation
+        document.write(x + z); // '1030'
+        document.write("<br>");
+
+        // Adding a string with a number, the result will be string concatenation
+        document.write(z + x); // '3010'
+        document.write("<br>");
+
+        // Adding strings and numbers, the result will be string concatenation
+        document.write("The result is: " + x + y); // 'The result is: 1020'
+        document.write("<br>");
+
+        // Adding numbers and strings, calculation performed from left to right
+        document.write(x + y + z); // 'The result is: 3030'
+    </script>
+</body>
+
+</html>

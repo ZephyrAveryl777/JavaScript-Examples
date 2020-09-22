@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Format a Number in Exponential Notation</title>
+</head>
+
+<body>
+    <script>
+        var x = 72.635;
+
+        document.write(x.toFixed() + "<br>");  // '73' (note rounding, no fractional part)
+        document.write(x.toFixed(2) + "<br>");  // '72.64' (note rounding)
+        document.write(x.toFixed(1) + "<br>");  // '72.6'
+
+        var y = 6.25e+5;
+        document.write(y.toFixed(2) + "<br>"); // '625000.00'
+
+        var z = 1.58e-4;
+        document.write(z.toFixed(2));  // '0.00' (since 1.58e-4 is equal to 0.000158)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Format Numbers with Precision</title>
+</head>
+
+<body>
+    <script>
+        var x = 6.235;
+
+        document.write(x.toPrecision() + "<br>");  // '6.235'
+        document.write(x.toPrecision(3) + "<br>");  // '6.24' (note rounding)
+        document.write(x.toPrecision(2) + "<br>");  // '6.2'
+        document.write(x.toPrecision(1) + "<br>");  // '6'
+
+        var y = 47.63;
+        document.write(y.toPrecision(2) + "<br>"); // '48' (note rounding, no fractional part)
+
+        var z = 1234.5;
+        document.write(z.toPrecision(2));  // '1.2e+3'
+    </script>
+</body>
+
+</html>

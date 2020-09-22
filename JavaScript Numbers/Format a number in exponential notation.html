@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Format a Number in Exponential Notation</title>
+</head>
+
+<body>
+    <script>
+        var x = 67.1234;
+
+        document.write(x.toExponential() + "<br>");  // 6.71234e+1
+        document.write(x.toExponential(6) + "<br>");  // 6.712340e+1
+        document.write(x.toExponential(4) + "<br>");  // 6.7123e+1
+        document.write(x.toExponential(2));  // 6.71e+1
+    </script>
+</body>
+
+</html>
