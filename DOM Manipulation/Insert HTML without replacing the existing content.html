@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Insert HTML without Replacing the Existing Content</title>
+</head>
+
+<body>
+    <!-- before-begin -->
+    <div id="main">
+        <!-- after-begin -->
+        <h1 id="title">Hello World!</h1>
+        <!-- before-end -->
+    </div>
+    <!-- after-end -->
+
+    <button type="button" onclick="insertContent()">Insert Content</button>
+
+    <script>
+        function insertContent() {
+            // Selecting target element
+            var mainDiv = document.getElementById('main');
+
+            // Inserting HTML just before the element itself, as a previous sibling
+            mainDiv.insertAdjacentHTML(
+                'before-begin',
+                '<p>This is paragraph one.</p>'
+            );
+
+            // Inserting HTML just inside the element, before its first child
+            mainDiv.insertAdjacentHTML(
+                'after-begin',
+                '<p>This is paragraph two.</p>'
+            );
+
+            // Inserting HTML just inside the element, after its last child
+            mainDiv.insertAdjacentHTML(
+                'before-end',
+                '<p>This is paragraph three.</p>'
+            );
+
+            // Inserting HTML just after the element itself, as a next sibling
+            mainDiv.insertAdjacentHTML(
+                'after-end',
+                '<p>This is paragraph four.</p>'
+            );
+        }
+    </script>
+</body>
+
+</html>

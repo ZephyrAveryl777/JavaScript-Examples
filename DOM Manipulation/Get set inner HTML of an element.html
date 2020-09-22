@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Get Set Inner HTML of an Element</title>
+</head>
+
+<body>
+    <div id="main">
+        <h1 id="title">Hello World!</h1>
+        <p id="hint">This is a simple paragraph.</p>
+    </div>
+
+    <button type="button" onclick="getContents()">Get Contents</button>
+    <button type="button" onclick="setContents()">Set Contents</button>
+
+    <script>
+        function getContents() {
+            // Getting inner HTML contents
+            var contents = document.getElementById("main").innerHTML;
+            alert(contents); // Outputs inner html contents
+        }
+        function setContents() {
+            // Setting inner HTML contents
+            var mainDiv = document.getElementById("main");
+            mainDiv.innerHTML = "<p>This is <em>newly inserted</em> paragraph.</p>";
+        }
+    </script>
+</body>
+
+</html>
