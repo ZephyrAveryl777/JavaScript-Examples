@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Setting Default Values for Function Parameters in Older Versions of JavaScript</title>
+</head>
+
+<body>
+    <script>
+        function sayHello(name) {
+            var name = name || 'World';
+            return 'Hello ' + name + '!';
+        }
+
+        document.write(sayHello()); // Hello World!
+        document.write("<br>");
+        document.write(sayHello('John')); // Hello John!
+    </script>
+</body>
+
+</html>

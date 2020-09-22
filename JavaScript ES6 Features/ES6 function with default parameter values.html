@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript ES6 Function with Default Parameter Values</title>
+</head>
+
+<body>
+    <script>
+        function sayHello(name = 'World') {
+            return `Hello ${name}!`;
+        }
+
+        document.write(sayHello()); // Hello World!
+        document.write("<br>");
+        document.write(sayHello('John')); // Hello John!
+    </script>
+</body>
+
+</html>

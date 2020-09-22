@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ES6 let keyword</title>
+</head>
+
+<body>
+    <script>
+        // ES6 syntax
+        for (let i = 0; i < 5; i++) {
+            document.write(i + "<br>"); // 0,1,2,3,4
+        }
+        document.write("<hr>" + i + "<hr>"); // undefined
+
+
+        // ES5 syntax
+        for (var i = 0; i < 5; i++) {
+            document.write(i + "<br>"); // 0,1,2,3,4
+        }
+        document.write("<hr>" + i);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ES6 Template Literals</title>
+</head>
+
+<body>
+    <script>
+        // Simple multi-line string
+        let str = `The quick brown fox
+            jumps over the lazy dog.`;
+
+        document.write(`<pre>${str}</pre>`);
+
+        // String with embedded variables and expression
+        let a = 10;
+        let b = 20;
+        let result = `The sum of ${a} and ${b} is ${a + b}.`;
+        document.write(result); // The sum of 10 and 20 is 30.
+    </script>
+</body>
+
+</html>

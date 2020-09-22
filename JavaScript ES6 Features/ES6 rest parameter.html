@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript ES6 Rest Parameter</title>
+</head>
+
+<body>
+    <script>
+        function sortNames(...names) {
+            return names.sort();
+        }
+
+        document.write(sortNames("Sarah", "Harry", "Peter")); // Harry,Peter,Sarah
+        document.write("<br>");
+        document.write(sortNames("Tony", "Ben", "Rick", "Jos")); // John,Jos,Rick,Tony
+    </script>
+</body>
+
+</html>

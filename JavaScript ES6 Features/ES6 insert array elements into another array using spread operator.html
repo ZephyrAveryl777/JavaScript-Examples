@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript ES6 Insert Array Elements into another Array using Spread Operator</title>
+</head>
+
+<body>
+    <script>
+        let pets = ["Cat", "Dog", "Parrot"];
+        let bugs = ["Ant", "Bee"];
+
+        // Creating an array by inserting elements from other arrays
+        let animals = [...pets, "Tiger", "Wolf", "Zebra", ...bugs];
+
+        document.write(animals); // Cat,Dog,Parrot,Tiger,Wolf,Zebra,Ant,Bee
+    </script>
+</body>
+
+</html>

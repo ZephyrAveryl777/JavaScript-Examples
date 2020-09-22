@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript ES6 Spread Operator</title>
+</head>
+
+<body>
+    <script>
+        function addNumbers(a, b, c) {
+            return a + b + c;
+        }
+
+        let numbers = [5, 12, 8];
+
+        // ES5 way of passing array as an argument of a function
+        document.write(addNumbers.apply(null, numbers)); // 25
+        document.write("<br>");
+
+        // ES6 spread operator
+        document.write(addNumbers(...numbers)); // 25
+    </script>
+</body>
+
+</html>

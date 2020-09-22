@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript this Keyword Value inside an Arrow Function</title>
+</head>
+
+<body>
+    <script>
+        function Person(nickname, country) {
+            this.nickname = nickname;
+            this.country = country;
+
+            this.getInfo = function () {
+                // Outer function context (Person object)
+                return () => {
+                    // Inner function context (Person object)
+                    document.write(this.constructor.name); // Person
+                    document.write(`<p>Hi, I'm ${this.nickname} from ${this.country}</p>`);
+                };
+            }
+        }
+
+        let p = new Person('Rick', 'Argentina');
+        let printInfo = p.getInfo();
+        printInfo(); // Hi, I'm Rick from Argentina
+    </script>
+</body>
+
+</html>

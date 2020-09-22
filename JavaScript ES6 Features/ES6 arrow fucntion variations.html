@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript ES6 Arrow Functions Variations</title>
+</head>
+
+<body>
+    <h3>JavaScript ES6 Arrow Functions Variations</h3>
+    <hr>
+    <script>
+        // Single parameter, single statement
+        document.write("Single parameter, single statement: " + "<br>");
+        var greet = name => document.write("Hi " + name + "!");
+        greet("Peter"); // Hi Peter!
+        document.write("<br><br>")
+
+
+        // Multiple arguments, single statement
+        document.write("Multiple arguments, single statement: " + "<br>");
+        var multiply = (x, y) => x * y;
+        document.write("After multiplying two numbers are: " + multiply(2, 3)); // 6
+        document.write("<br><br>")
+
+        // Single parameter, multiple statements
+        document.write("Single parameter, multiple statements: " + "<br>");
+        var test = age => {
+            if (age > 18) {
+                document.write("Adult");
+            } else {
+                document.write("Teenager");
+            }
+        }
+        test(21); // Adult
+        document.write("<br><br>");
+
+
+        // Multiple parameters, multiple statements
+        document.write("Multiple parameters, multiple statements: " + "<br>");
+        var divide = (x, y) => {
+            if (y != 0) {
+                return x / y;
+            }
+        }
+        document.write("After dividing two numbers: " + divide(10, 2)); // 5
+        document.write("<br><br>");
+
+        // No parameter, single statement
+        var hello = () => document.write("No parameter, single statement: <br>" + 'Hello World!');
+        hello(); // Hello World!
+    </script>
+</body>
+
+</html>

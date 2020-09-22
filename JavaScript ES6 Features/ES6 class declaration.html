@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript ES6 Classes</title>
+</head>
+
+<body>
+    <script>
+        class Rectangle {
+            // Class constructor
+            constructor(length, width) {
+                this.length = length;
+                this.width = width;
+            }
+
+            // Class method
+            getArea() {
+                return this.length * this.width;
+            }
+        }
+
+        // Square class inherits from the Rectangle class
+        class Square extends Rectangle {
+            // Child class constructor
+            constructor(length) {
+                // Call parent's constructor
+                super(length, length);
+            }
+
+            // Child class method
+            getPerimeter() {
+                return 2 * (this.length + this.width);
+            }
+        }
+
+        let rectangle = new Rectangle(5, 10);
+        document.write(rectangle.getArea()); // 50
+        document.write("<br>");
+
+        let square = new Square(5);
+        document.write(square.getArea()); // 25
+        document.write("<br>");
+        document.write(square.getPerimeter()); // 20
+        document.write("<br>");
+
+        document.write(square instanceof Square); // true
+        document.write("<br>");
+        document.write(square instanceof Rectangle); // true
+        document.write("<br>");
+        document.write(rectangle instanceof Square); // false
+    </script>
+</body>
+
+</html>
