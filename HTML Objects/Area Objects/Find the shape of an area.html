@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Objects</title>
+</head>
+
+<body>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR1tzJSDW7Vo-Y4iA_qdNLqHxX4xtBwl0PeJQ&usqp=CAU"
+        width="145" height="126" usemap="#planet-map">
+
+    <map name="planet-map">
+        <area id="venus" shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+    </map>
+
+    <p>Click the button to return the shape of the "venus" area in the image-map.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("venus").shape;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>
