@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object</title>
+</head>
+
+<body>
+    <script>
+        function getElements() {
+            var x = document.getElementsByName("x");
+            document.getElementById("demo").innerHTML = x.length;
+        }
+    </script>
+    </head>
+
+    <body>
+
+        <p>
+            Cats: <input name="x" type="radio" value="Cats">
+            Dogs: <input name="x" type="radio" value="Dogs">
+        </p>
+
+        <p>
+            <input type="button" onclick="getElements()" value="How many elements named x?">
+        </p>
+
+        <p id="demo"></p>
+
+    </body>
+
+</html>
