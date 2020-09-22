@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <iframe id="my-frame" src="https://google.com" name="iframe_a"></iframe>
+
+    <p>Click the button to return the name of the iframe.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("my-frame").name;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Objects</title>
+</head>
+
+<body>
+    <iframe id="my-frame" src="https://www.google.com"></iframe>
+
+    <p>Click the button to display the value of the src attribute in the iframe.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("my-frame").src;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+</body>
+
+</html>
