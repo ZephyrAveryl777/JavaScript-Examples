@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Objects</title>
+</head>
+
+<body>
+    <h2>Loop through JSON properties</h2>
+    <p>How to loop through all properties in a JSON object</p>
+    <p id="demo"></p>
+    <script>
+        var myObj, x;
+        myObj = { "name": "Jhon", "age": 30, "car": null };
+        for (x in myObj) {
+            document.getElementById("demo").innerHTML += x + "<br>";
+        }
+    </script>
+</body>
+
+</html>

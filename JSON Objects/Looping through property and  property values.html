@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Objects</title>
+</head>
+
+<body>
+    <p>Use bracket notation to access the property values.</p>
+    <p id="demo"></p>
+    <script>
+        var myObj, x;
+        myObj = { "name": "John", "age": 30, "car": null };
+        document.getElementById("demo").innerHTML = "The properties and there property values are: <br>";
+        for (x in myObj) {
+            document.getElementById("demo").innerHTML += x + " : " + myObj[x] + " <br>";
+        }
+    </script>
+</body>
+
+</html>
