@@ -1,16 +1,10 @@
-# JavaScript Loops
+# JavaScript Math Operations
 
-- **`Objective :`** learn how to repeat a series of actions using loops in JavaScript.
+- **`Objective :`** learn how to perform math operations in JavaScript.
 
 ### Preface
 
-Loops are used to execute the same block of code again and again, as long as a certain condition is met. The basic idea behind a loop is to automate the repetitive tasks within a program to save the time and effort. JavaScript now supports five different types of loops.
-
-- **while** — loops through a block of code as long as the condition specified evaluates to true.
-- **do…while** — loops through a block of code once; then the condition is evaluated. If the condition is true, the statement is repeated as long as the specified condition is true.
-- **for** — loops through a block of code until the counter reaches a specified number.
-- **for…in** — loops through the properties of an object.
-- **for…of** — loops over iterable objects such as arrays, strings, etc.
+The JavaScript Math object provides a number of useful properties and methods for performing mathematical tasks like, generating random numbers, rounding numbers, obtaining values such as PI and performing calculation, and so on. It also includes methods for performing mathematical task that are normally impossible or too complex to perform using standard mathematical operators (`+, -,\*, and /`) such as calculating sine or cosine values.
 
 ---
 
