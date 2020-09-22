@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Removing an Event Listener</title>
+</head>
+
+<body>
+    <button id="myBtn">Click Me</button>
+
+    <script>
+        // Defining function
+        function greetWorld() {
+            alert("Hello World!");
+        }
+
+        // Selecting button element
+        var btn = document.getElementById("myBtn");
+
+        // Attaching event listener
+        btn.addEventListener("click", greetWorld);
+
+        // Removing event listener
+        btn.removeEventListener("click", greetWorld);
+    </script>
+    <p><strong>Note:</strong> If you click the "Click Me" button nothing will happen, since event listener is removed.
+    </p>
+</body>
+
+</html>

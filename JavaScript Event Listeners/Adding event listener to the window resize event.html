@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Adding Event Listener to the Window Resize Event</title>
+</head>
+
+<body>
+    <div id="result"></div>
+
+    <script>
+        // Defining event listener function
+        function displayWindowSize() {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            var size = "Width: " + w + ", " + "Height: " + h;
+            document.getElementById("result").innerHTML = size;
+        }
+
+        // Attaching the event listener function to window's resize event
+        window.addEventListener("resize", displayWindowSize);
+    </script>
+    <p><strong>Note:</strong> Please resize the browser window to see how it works.</p>
+</body>
+
+</html>
