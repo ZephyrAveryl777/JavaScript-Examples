@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Object</title>
+</head>
+
+<body>
+    <h2>Reset a form</h2>
+    <p>Enter names in the fields below, then click "Reset" to reset the form.</p>
+
+    <form id="frm1" action="https://www.w3schools.com/action_page.php">
+        First name: <input type="text" name="firstName"><br>
+        Last name: <input type="text" name="lastName"><br><br>
+        <input type="button" onclick="myFunction()" value="Reset">
+    </form>
+
+    <script>
+        function myFunction() {
+            document.getElementById("frm1").reset();
+        }
+    </script>
+
+</body>
+
+</html>
