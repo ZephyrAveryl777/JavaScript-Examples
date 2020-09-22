@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Split a String into an Array</title>
+</head>
+
+<body>
+    <script>
+        var str = "INTERSTELLAR";
+        var strArr = str.split("");
+        document.write(strArr[0] + "<br>"); // Prints: I
+        document.write(strArr[1] + "<br>"); // Prints: N
+        document.write(strArr[strArr.length - 1]); // Prints: R
+        document.write("<hr>"); // Prints: N
+
+        // Loop through all the elements of the characters array and print them
+        for (var i in strArr) {
+            document.write("<br>" + strArr[i]);
+        }
+    </script>
+</body>
+
+</html>

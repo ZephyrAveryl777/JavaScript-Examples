@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Split a String into an Array</title>
+</head>
+
+<body>
+    <script>
+        var fruitsStr = "Apple, Banana, Mango, Orange, Papaya";
+        var fruitsArr = fruitsStr.split(", ");
+        document.write(fruitsArr[0] + "<br>"); // Prints: Apple
+        document.write(fruitsArr[2] + "<br>"); // Prints: Mango
+        document.write(fruitsArr[fruitsArr.length - 1]); // Prints: Papaya
+        document.write("<hr>");
+
+        // Loop through all the elements of the fruits array
+        for (var i in fruitsArr) {
+            document.write("<p>" + fruitsArr[i] + "</p>");
+        }
+    </script>
+</body>
+
+</html>
