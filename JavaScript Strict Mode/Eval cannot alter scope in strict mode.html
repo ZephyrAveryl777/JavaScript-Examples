@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Eval Cannot Alter Scope in Strict Mode</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        eval("var x = 5;");
+        console.log(x); // ReferenceError: x is not defined
+    </script>
+    <p><strong>Note:</strong> Please check out the browser console by pressing the f12 key on the keyboard.</p>
+</body>
+
+</html>

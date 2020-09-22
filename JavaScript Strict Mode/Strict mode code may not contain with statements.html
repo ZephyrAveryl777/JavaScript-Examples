@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Strict Mode Code may not Contain with Statements</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        // Without with statement
+        var radius1 = 5;
+        var area1 = Math.PI * radius1 * radius1;
+
+        // Using with statement
+        var radius2 = 5;
+        with (Math) { // SyntaxError
+            var area2 = PI * radius2 * radius2;
+        }
+    </script>
+    <p><strong>Note:</strong> Please check out the browser console by pressing the f12 key on the keyboard.</p>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Cannot Assign to Undeclared Variable in Strict Mode</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        function doSomething() {
+            msg = "Hi, there!"; // ReferenceError: msg is not defined
+            return msg;
+        }
+        console.log(doSomething());
+    </script>
+    <p><strong>Note:</strong> Please check out the browser console by pressing the f12 key on the keyboard.</p>
+</body>
+
+</html>

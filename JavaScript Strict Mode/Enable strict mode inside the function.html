@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Enable Strict Mode inside the Function</title>
+</head>
+
+<body>
+    <script>
+        x = 5;
+        console.log(x); // 5
+
+        function sayHello() {
+            "use strict";
+            str = "Hello World!"; // ReferenceError: str is not defined
+            console.log(str);
+        }
+        sayHello();
+    </script>
+    <p><strong>Note:</strong> Please check out the browser console by pressing the f12 key on the keyboard.</p>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Octal Literals are Not Allowed in Strict Mode</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        var x = 010; // SyntaxError
+        console.log(parseInt(x));
+    </script>
+    <p><strong>Note:</strong> Please check out the browser console by pressing the f12 key on the keyboard.</p>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Cannot Assign to Read-only Property of Object in Strict Mode</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        var person = { name: "Peter", age: 28 };
+
+        Object.defineProperty(person, "gender", { value: "male", writable: false });
+        person.gender = "female"; // TypeError
+    </script>
+    <p><strong>Note:</strong> Please check out the browser console by pressing the f12 key on the keyboard.</p>
+</body>
+
+</html>

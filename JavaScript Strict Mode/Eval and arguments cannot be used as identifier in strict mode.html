@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript eval and arguments Cannot be Used as Identifier in Strict Mode</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        var eval = 10; // SyntaxError
+        console.log(eval);
+    </script>
+    <p><strong>Note:</strong> Please check out the browser console by pressing the f12 key on the keyboard.</p>
+</body>
+
+</html>

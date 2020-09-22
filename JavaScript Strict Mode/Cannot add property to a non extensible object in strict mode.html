@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Cannot Add Property to a Non-extensible Object in Strict Mode</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        var person = { name: "Peter", age: 28 };
+
+        console.log(Object.isExtensible(person)); // true
+        Object.freeze(person); // lock down the person object
+        console.log(Object.isExtensible(person)); // false
+        person.gender = "male"; // TypeError
+    </script>
+    <p><strong>Note:</strong> Please check out the browser console by pressing the f12 key on the keyboard.</p>
+</body>
+
+</html>
