@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Stop Immediate Propagation Demo</title>
+    <style type="text/css">
+        div,
+        p,
+        a {
+            padding: 15px 30px;
+            display: block;
+            border: 2px solid #000;
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div onclick="alert('You clicked: ' + this.tagName)">DIV
+        <p onclick="alert('You clicked: ' + this.tagName)">P
+            <a href="#" id="link">A</a>
+        </p>
+    </div>
+
+    <script>
+        function sayHi() {
+            alert("Hi, there!");
+            event.stopImmediatePropagation();
+        }
+        function sayHello() {
+            alert("Hello World!");
+        }
+
+        // Attaching multiple event handlers to hyperlink
+        var link = document.getElementById("link");
+        link.addEventListener("click", sayHi);
+        link.addEventListener("click", sayHello);
+    </script>
+</body>
+
+</html>
