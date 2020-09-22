@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Get Computed Style Information from an Element</title>
+    <style type="text/css">
+        #intro {
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="intro" style="color:red; font-size:20px;">This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <script>
+        // Selecting element
+        var elem = document.getElementById("intro");
+
+        // Getting computed style information
+        var styles = window.getComputedStyle(elem);
+
+        document.write(styles.getPropertyValue("color") + "<br>");  // Prints: rgb(255, 0, 0)
+        document.write(styles.getPropertyValue("font-size") + "<br>");  // Prints: 20px
+        document.write(styles.getPropertyValue("font-weight") + "<br>");  // Prints: 700
+        document.write(styles.getPropertyValue("font-style"));  // Prints: italic
+    </script>
+</body>
+
+</html>

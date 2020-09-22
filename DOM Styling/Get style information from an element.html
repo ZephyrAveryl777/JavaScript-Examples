@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Get Style Information from an Element</title>
+</head>
+
+<body>
+    <p id="intro" style="color:red; font-size:20px;">This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+
+    <script>
+        // Selecting element
+        var elem = document.getElementById("intro");
+
+        // Getting style information from element
+        document.write(elem.style.color + "<br>");  // Prints: red
+        document.write(elem.style.fontSize + "<br>");  // Prints: 20px
+        document.write(elem.style.fontStyle);  // Prints nothing
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Add or Remove CSS Classes on an Element Using classList</title>
+    <style>
+        .highlight {
+            background: rgb(91, 252, 203);
+        }
+
+        .disabled {
+            background: lightgray;
+            opacity: 0.7;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="info" class="disabled">Something very important!</div>
+
+    <script>
+        // Selecting element
+        var elem = document.getElementById("info");
+
+        elem.classList.add("hide");  // Add a new class
+        elem.classList.add("note", "highlight");  // Add multiple classes
+        elem.classList.remove("hide"); // Remove a class
+        elem.classList.remove("disabled", "note"); // Remove multiple classes
+        elem.classList.toggle("visible"); // If class exists remove it, if not add it
+
+        // Determine if class exist
+        if (elem.classList.contains("highlight")) {
+            alert("The specified class exists on the element.");
+        }
+    </script>
+</body>
+
+</html>

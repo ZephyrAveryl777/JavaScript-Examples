@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Add or Replace CSS Classes on an Element</title>
+    <style>
+        .highlight {
+            background: yellow;
+        }
+
+        .disabled {
+            background: lightgray;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="info" class="disabled">Something very important!</div>
+
+    <script>
+        // Selecting element
+        var elem = document.getElementById("info");
+
+        elem.className = "note";  // Add or replace all classes with note class
+        elem.className += " highlight";  // Add a new class highlight
+    </script>
+</body>
+
+</html>
